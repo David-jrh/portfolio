@@ -14,7 +14,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // hent API routes
-require('./routes.js')(app);
+let directories = ['routes'];
+
+directories.forEach(directory=>{
+    fs.readdirSync(path.join(__dirname, directory)).forEach(file=>{
+        require(path.join(__dirname, directory, file))(app);
+    });
+});
 // siger hvilken mappe der skal bruges til de statiske filer
 app.use(express.static('public'));
 
