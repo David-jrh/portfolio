@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // hent API routes
-// require('./routes.js')(app);
+require('./routes.js')(app);
 // siger hvilken mappe der skal bruges til de statiske filer
 app.use(express.static('public'));
 
