@@ -1,7 +1,3 @@
-
-
-
-
 // hent mysql2 modulet
 const mysql = require('mysql2');
 
