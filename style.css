@@ -226,15 +226,3 @@ a:link {
   .showClick{
       color:white;
   }
-
-  .center{
-      margin: 0 auto;
-     margin-top: 20%;
-     justify-content: center;
-     float: left;
-     background-color: red;
-  }
-
-  .colum{
-      flex-direction: row; 
-  }

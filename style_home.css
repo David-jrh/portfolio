@@ -232,7 +232,7 @@ a:link {
 	/** Pad the lightbox image */
 	max-width: 90%;
 	max-height: 80%;
-	margin-top: 2%;
+	margin-top: 10%;
 }
 
 .lightbox:target {
@@ -241,4 +241,8 @@ a:link {
 
 	/** Unhide lightbox **/
 	display: block;
+}
+
+.thumbnail img{
+    
 }
