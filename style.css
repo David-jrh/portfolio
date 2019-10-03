@@ -4,7 +4,7 @@
     width: 1280px;
     margin: 0 auto;
     height: auto;
-    background: url(/photos/butterfly.jpg);
+    background: url(./photos/butterfly.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
