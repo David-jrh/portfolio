@@ -118,8 +118,6 @@ justify-content: center;
 }
 
 
-
-
 @keyframes slide-in {
     100% { transform: translateX(0%); }
 }
