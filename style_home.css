@@ -3,10 +3,10 @@
     width: 1280px;
     margin: 0 auto;
     height: auto;
-
+    background-color: rgb(236, 236, 236);
 }
 html{
-    background-color: rgb(236, 236, 236);
+    background-color:black;
 }
 
 
@@ -82,7 +82,8 @@ h2{
  }
  .burger img{
      width: 100%;
-     justify-content: flex-end
+     justify-content: flex-end;
+     cursor: pointer;
  }
 
  .burger{
@@ -96,6 +97,7 @@ h2{
  }
  .container2{
      margin-top: 5%;
+
      display: flex;
      flex-direction: row;
      align-content: space-around;
@@ -103,3 +105,140 @@ h2{
     align-items: baseline;
   
  }
+
+
+ @keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+ .overlay{
+     position: fixed;
+     top:0;
+     transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    animation:slide-in 1.5s forwards;
+    z-index: 1;
+ }
+
+
+ .hidden{
+    display:none;
+    }
+
+.overlay2{
+    position:fixed;
+    z-index: 3;
+    top: 0;
+    right:8%;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    animation:slide-in 1.5s forwards;
+}
+
+.close_icon img{
+width: 25%;
+
+cursor: pointer;
+}
+
+.close_icon a{
+    width: 25%;
+    }
+
+.kategori{
+    padding-top: 30%;
+  list-style: none;
+        font-family: 'Bebas Neue';
+        font-weight: bolder;
+        font-size: 2.5rem;
+        color:white;
+        margin-block-start: 0.3em;
+        margin-block-end: 0em;
+        transform: translateX(-70%)
+        
+}
+
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  .uparrow{
+      position: fixed;
+      opacity: 0.8;
+      right: 0;
+      bottom: 10%;
+     
+  }
+  .uparrow img{
+    width: 30%;
+    cursor: pointer;
+  }
+
+
+  /** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}

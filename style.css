@@ -4,16 +4,18 @@
     width: 1280px;
     margin: 0 auto;
     height: auto;
-   
-}
-html{
     background: url(./photos/butterfly.jpg);
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
 }
+html{
+    background-color: black;
+}
+
 img{
     width: 100%;
 }
@@ -114,3 +116,125 @@ display: flex;
 justify-content: center;
 
 }
+
+
+
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+ .overlay{
+     position: fixed;
+     top:0;
+     transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    animation:slide-in 1.5s forwards;
+    z-index: 1;
+ }
+
+
+ .hidden{
+    display:none;
+    }
+
+.overlay2{
+    position:fixed;
+    z-index: 3;
+    top: 0;
+    right:8%;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    animation:slide-in 1.5s forwards;
+}
+
+.close_icon img{
+width: 25%;
+
+cursor: pointer;
+}
+
+.close_icon a{
+    width: 25%;
+    }
+
+.kategori{
+    padding-top: 30%;
+  list-style: none;
+        font-family: 'Bebas Neue';
+        font-weight: bolder;
+        font-size: 2.5rem;
+        color:white;
+        margin-block-start: 0.3em;
+        margin-block-end: 0em;
+        transform: translateX(-70%)
+        
+}
+
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+  
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  .uparrow{
+      position: fixed;
+      opacity: 0.8;
+      right: 0;
+      bottom: 10%;
+     
+  }
+  .uparrow img{
+    width: 30%;
+    cursor: pointer;
+  }
+
+  .showClick{
+      color:white;
+  }
+
+  .center{
+      margin: 0 auto;
+     margin-top: 20%;
+     justify-content: center;
+     float: left;
+     background-color: red;
+  }
+
+  .colum{
+      flex-direction: row; 
+  }
