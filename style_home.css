@@ -168,7 +168,7 @@ cursor: pointer;
         color:white;
         margin-block-start: 0.3em;
         margin-block-end: 0em;
-        transform: translateX(-70%)
+        transform: translateX(-40%)
         
 }
 
@@ -201,7 +201,7 @@ a:link {
   .uparrow{
       position: fixed;
       opacity: 0.8;
-      right: 0;
+      right: -12%;
       bottom: 10%;
      
   }
@@ -241,4 +241,86 @@ a:link {
 
 	/** Unhide lightbox **/
 	display: block;
+}
+
+
+
+/* Zoom In #1 */
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}
+
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+figure {
+	width: 600px;
+	height: 890px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.lightbox img{
+    padding: 0 1%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5% 15% ;
+
+}
+.col-6{
+    background-color: white;
+    width: 50%;
+    float: left;
+}
+.col-6 img{
+    width: 50%;
+}
+.line{
+    line-height: 150%;
+}
+
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container4 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
