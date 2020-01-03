@@ -9,43 +9,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="wrapper" class="">
+    <div id="wrapper" class="hidesoon">
 
 
-            <div class="overlay hidden">
-                    <img src="./photos/overlay.png">
-                </div>
-               
-               
-                <div class="overlay2 hidden">
-                        
-                        <a class="hideClick hidden  close_icon">
-                                <img src="./photos/close_icon.png" alt="">
-                            </a>
-
-                            <ul class="kategori">
-                                    <li><a href="index.html">FRONT-PAGE</a></li>
-                                    <li><a href="home.html">HOME</a></li>
-                                    <li><a href="portraits.html">PORTRAITS</a></li>
-                                <li><a href="#">TRAVEL</a></li>
-                                <li><a href="drone.html">DRONE</a></li>
-                                <li><a href="#">CREATIVE</a></li>
-                                <li><a href="#">ORDERS</a></li>
-                                <li><a href="#">CONCERTS</a></li>
-                                <li><a href="#">CPH-B</a></li>
-                                <li><a href="#">CONTACT</a></li>
-                                <li><a href="/about.html">ABOUT</a></li>
-                                
-                           
-                            </ul>
-
-
-                </div>
 
         <!-- <img src="/photos/butterfly.jpg" alt="butterflywoman"> -->
         <div class="container center padding knapper">
             
-            <a href="home.html" class="slidedown">COME IN</a>
+                <button onclick="toggleClock()" id="clockButton">COME IN</button>
             
             
             <a class="showClick" >CATEGORIES</a>
@@ -56,26 +27,172 @@
             
       <div class="container socials">
 
-      
+          <a href="www.google.dk">
+              <img src="./photos/instagram.png" alt="">
+              </a>  
+              
+              <a href="www.google.dk">
+                  <img src="./photos/facebook-logo-button.png" alt="">
+                  </a>
             <a href="www.google.dk">
                 <img src="./photos/500px-monogram.png" alt="">
                 </a>
 
-            <a href="www.google.dk">
-                <img src="./photos/facebook-logo-button.png" alt="">
-                </a>
 
              <a href="www.google.dk">
                 <img src="./photos/gmail.png" alt="">
                 </a>
          
-            <a href="www.google.dk">
-                <img src="./photos/instagram.png" alt="">
-                </a>  
      
             </div>      
             
     </div>  
+
+    <div id="wrapper2" class=" hidenow">
+        
+
+                    <div class="overlay hidden">
+                            <img src="./photos/overlay.png">
+                        </div>
+                       
+                       
+                        <div class="overlay2 hidden">
+                                
+                                <a class="hideClick hidden  close_icon">
+                                        <img src="./photos/close_icon.png" alt="">
+                                    </a>
+        
+                                    <ul class="kategori">
+                                            <li><a href="index.html">FRONT-PAGE</a></li>
+                                            <li><a href="home.html">HOME</a></li>
+                                            <li><a href="portraits.html">PORTRAITS</a></li>
+                                        <li><a href="#">TRAVEL</a></li>
+                                        <li><a href="drone.html">DRONE</a></li>
+                                        <li><a href="#">CREATIVE</a></li>
+                                        <li><a href="#">ORDERS</a></li>
+                                        <li><a href="#">CONCERTS</a></li>
+                                        <li><a href="#">CPH-B</a></li>
+                                        <li><a href="#">CONTACT</a></li>
+                                        <li><a href="about.html">ABOUT</a></li>
+                                        
+                                   
+                                    </ul>
+        
+        
+                        </div>
+        
+                <nav id="menu">
+        
+                    <div class="container"> 
+                    <div class="">
+                        <h2> DAVIDdesigns</h2>
+                    </div>
+              <div class="container socials">
+        
+                <a href="https://www.instagram.com/david.h.photo/" target="_blank">
+                    <img src="./photos/instagram.png" alt="">
+                    </a>  
+                    
+                    <a href="www.google.dk">
+                        <img src="./photos/facebook-logo-button.png" alt="">
+                        </a>
+                    <a href="https://500px.com/davidh_photo" target="_blank">
+                        <img src="./photos/500px-monogram.png" alt="">
+                        </a>
+        
+        
+                     <a href="www.google.dk">
+                        <img src="./photos/gmail.png" alt="">
+                        </a>
+        
+                        
+        
+                </div>
+                <div class="container burger">
+                <a class="burger showClick">
+                        <img src="./photos/menu-icon.png" alt="">
+                        </a>
+                </div>
+                    </div>  
+                 </nav>   
+        
+                 <div class="container hover01"style="padding: 5% 1%;">
+              <!-- thumbnail image wrapped in a link -->
+        <a href="#img1">
+                <figure><img src="./photos/drone.JPG" class="thumbnail" width="100%">
+        </figure>      </a>
+        <a href="#img2">
+                <figure><img src="./photos/drone1.JPG" class="thumbnail" width="100%"></figure>
+              </a>
+        
+              
+              <!-- lightbox container hidden with CSS -->
+              <a href="#_" class="lightbox" id="img1">
+                <img src="./photos/drone.JPG" >
+                <h2>Lone Tree - 2019</h2>
+              </a>
+              <a href="#_" class="lightbox" id="img2">
+                <img src="./photos/drone1.JPG" >
+                <h2>Oraganic Spetecular - 2018</h2>
+              </a>
+              <a href="#_" class="lightbox" id="img3">
+                <img src="./photos/drone2.JPG" >
+                <h2>Clear Cars - 2017</h2> 
+              </a>
+              </div>
+        
+              <div class="container hover01"style="padding:1% 1%;">
+                <!-- thumbnail image wrapped in a link -->
+          <a href="#img3">
+                  <figure><img src="./photos/drone2.JPG" class="thumbnail" width="100%"></figure>
+                </a>
+          <a href="#img6">
+                  <figure><img src="./photos/drone5.JPG" class="thumbnail" width="100%"></figure>
+                </a>
+                
+                <!-- lightbox container hidden with CSS -->
+                <a href="#_" class="lightbox" id="img3">
+                  <img src="./photos/drone2.JPG" >
+                  <h2>OCEAN VIEW - 2017</h2> 
+                </a>
+                <a href="#_" class="lightbox" id="img5">
+                  <img src="./photos/drone4.JPG" >
+                  <h2>OCEAN VIEW - 2017</h2> 
+                </a>
+         
+                </div>
+        
+        
+        
+              <div class="container hover01"style="padding:1% 1%; transform: translateY(-150%);">
+                    <!-- thumbnail image wrapped in a link -->
+              <a href="#img4">
+                      <figure><img src="./photos/drone3.JPG" class="thumbnail" width="100%"></figure>
+                    </a>
+              <a href="#img5">
+                      <figure><img src="./photos/drone4.JPG" class="thumbnail" width="100%"></figure>
+                    </a>
+           
+                    
+                    <!-- lightbox container hidden with CSS -->
+                    <a href="#_" class="lightbox" id="img4">
+                      <img src="./photos/drone3.JPG" >
+                      <h2>Clear Cars - 2017</h2> 
+                    </a>
+                    
+                    <a href="#_" class="lightbox" id="img5">
+                      <img src="./photos/drone4.JPG" >
+                      <h2>Clear Cars - 2017</h2> 
+                    </a>
+                    <a href="#_" class="lightbox" id="img6">
+                      <img src="./photos/drone5.JPG" >
+                      <h2>Clear Cars - 2017</h2> 
+                    </a>
+                    </div>
+        
+        </div> 
+    
+    </div>
     <script type="text/javascript">
 
         $(function (){
@@ -97,6 +214,40 @@
         });
         
         });
+
+
+        function toggleClock() {
+    // get the clock
+    var myClock = document.getElementById('wrapper2');
+
+    var front = document.getElementById('wrapper');
+
+    // get the current value of the clock's display property
+    var displaySetting = myClock.style.display;
+
+    // also get the clock button, so we can change what it says
+    var clockButton = document.getElementById('clockButton');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') {
+      // clock is visible. hide it
+      myClock.style.display = 'block';
+    
+      clockButton.innerHTML = 'COME IN';
+   
+    }
+    else {
+      // clock is hidden. show it
+
+      front.style = 'animation:slide-up 1.5s forwards';
+    
+    
+    }
+
+
+
+    
+  }
         </script>  
 </body>
 </html>
