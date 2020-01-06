@@ -4,6 +4,14 @@
     margin: 0 auto;
     height: auto;
     background-color: rgb(236, 236, 236);
+
+  
+
+    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
 }
 html{
     background-color:black;
@@ -481,3 +489,105 @@ position: relative;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+.sidea{
+ 
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+
+}
+
+.sidea a{
+  font-family: 'Bebas Neue';
+  background-color: black;
+  padding: 1% 8%;
+  font-size: 1.7rem;
+  color:white;
+  width: 150%;
+z-index: 2;
+margin: 5% 15%;
+
+border: 2px black solid;
+}
+
+
+.parallaxxd{
+  background-image: url("./photos/bwdrone.jpg");
+  background-size: inherit;
+}
+
+.parallax{
+  background-image: url("./photos/butterfly.jpg");
+}
+
+.parallaxv{
+  background-image: url("./photos/vindmoeller.jfif");
+}
+
+.parallaxapp{
+  background-image: url("./photos/Healthy\ Food\ Made\ Easy\ -min.jpg");
+}
+
+
+
+.parallax, .parallaxapp, .parallaxv, .parallaxxd{
+  /* The image used */
+  
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.read button{
+  font-family: 'Bebas Neue';
+  background-color: black;
+  padding: 1% 1.5%;
+  font-size: 1rem;
+  color:white;
+z-index: 2;
+transform: translateY(-140%);
+transform: translateX(140%);
+border: none;
+
+}
+
+
+#more {display: none;}
