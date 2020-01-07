@@ -24,7 +24,7 @@
                       </a>
 
                       <div class="sidenav kategori">
-                          <li><a href="home.html">HOME</a></li>
+                          <li><a href="index.html">HOME</a></li>
                           <button class="dropdown-btn">CPH ▼
                                   <i class="fa fa-caret-down" style="color: red;"></i>
                                 </button>
@@ -40,7 +40,7 @@
                           <div class="dropdown-container">
                                   <a href="home.html"style=" text-decoration: underline;">OVERVIEW</a>
                                   <a href="portraits.html">PORTRAITS</a>
-                                  <a href="#">TRAVEL</a>
+                                  <a href="travel.html">TRAVEL</a>
                                   <a href="drone.html">DRONE</a>
                                   <a href="#">CREATIVE</a>
                                   <a href="#">ORDERS</a>
@@ -94,28 +94,18 @@
 
 <div class="col-6" style="padding-bottom: 6%;" >
     <h2 style="color:black; padding:15% 0 0 15%"> ABOUT ME</h2>
-    <p>
-    Hello my name is David Hjorth<br>
-
-    </p>
-    <p class="line">
-    i always loved taking photos of what inspires me, make me happy, places i go, people i meet, animals i like! i love to find the beauti in everything and make images that makes me want to jump into it an expirence the happinies, meet the beutiful interesting person or just feel the object.<br>
-    
-     
-    
-         the best thing about photography is capturing moments, freezing time and then bringing it back while photoediting software make you able to put your touch, your artistic touch on this world!<br>
-    
-     
-    
-         i truely believe that doin what your like in a good enviroment is why we are on this planet. thats why its so important to be openminded and free, if you like what you have seen please dont hesistate to contact me about anything on your mind!<br>
-    
-         i would love some feedback!<br>
+   
+    <p class="line" style="line-height: 2rem;">
+      I always loved taking photos of what inspire me, make me happy, places i go, people i meet, animals i like! i love to find the beauty of everything and make images that make me want to jump into it an experience the happiness, meet the beautiful interesting person or just feel the object.<br>
+      the best thing about photography is capturing moments, freezing time and then bringing it back while the photo editing software makes you able to put your touch, your artistic touch on this world!<br>
+      i truly believe that doing what your like in a good environment is why we are on this planet. thats why its so important to be openminded and free, if you like what you have seen please don't hesitate to contact me about anything on your mind!<br>
+      i would love some feedback!<br>
     
      
     
         </p>
-    <p class="line">
-    LIfe achiewements:<br>
+    <p class="line" style="padding-bottom: 0%; line-height: 2rem;">
+    <span style="font-weight: bolder;"> Life achiewements: </span><br>
     
     Photgraphy School (Københavns Tekniske Skole)<br>
     
@@ -130,10 +120,10 @@
 </div >
 
 <div class="col-6" style="padding-bottom: 5%">
-<img src="./photos/me.jpg" style="padding: 2% 2% 0 45%">
+<img src="./photos/me.jpg" style="padding: 2% 32% 1% 20%">
 
 
-<div class="container4">
+<div class="container4"style="margin: 0% 12% 2% 2%">
     <form action="/action_page.php">
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -143,9 +133,10 @@
   
       <label for="country">Country</label>
       <select id="country" name="country">
-        <option value="australia">Australia</option>
+        <option value="australia">Denmark</option>
         <option value="canada">Canada</option>
         <option value="usa">USA</option>
+       
       </select>
   
       <label for="subject">Subject</label>
@@ -206,6 +197,27 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
 }
             
             </script>
